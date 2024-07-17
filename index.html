@@ -21,22 +21,41 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <p>Passionate Embedded Systems Engineer with experience in software development, real-time systems, and hardware interfaces. Adept at using C/C++, Python, and various development tools to create efficient and reliable embedded solutions.</p>
+        <p>Passionate Embedded Systems Engineer with experience in firmware development, real-time systems, and hardware interfaces. 
+            Adept at using C/C++, Python, and various development tools to create efficient and reliable embedded solutions.</p>
     </section>
 
     <section id="projects">
         <h2>Projects</h2>
         <div class="project">
             <h3>Self-Driving RC Car</h3>
-            <p>Designed a self-driving RC car with CAN Bus, GPS, Compass, and Android app for navigation using LPC4078 MCU board. Implemented obstacle avoidance and self-navigation using FreeRTOS.</p>
+            <p>Designed a self-driving RC car utilizing CAN Bus, GPS, Compass, and an Android application to navigate from source to destination. 
+                The car successfully implements the obstacle avoidance algorithm in addition to self-navigation. 
+                All the nodes (sensor, motor, bridge controller, GPS, compass, driver) communicated on CAN Bus. 
+                Worked on Motor and Sensor nodes for effective navigation on up and down-hill terrain. Simulated and 
+                analyzed CAN data over CAN bus using BUS MASTER tool. This project incorporated SJTwo LPC4078(NXP) board, HRLV-MaxSonar-EZ1 sensor, Servo, and DC motor. 
+                Implemented FreeRTOS-based periodic callbacks to efficiently handle tasks in real-time.</p>
         </div>
         <div class="project">
             <h3>Two-Channel Oscilloscope</h3>
-            <p>Implemented a two-channel oscilloscope with a frequency range of 20mHz-10KHz on the Infineon PSoC6 Board. Enabled real-time waveform plotting on a serial plotter.</p>
+            <p>Designed and Implemented a Two-channel Oscilloscope supporting frequencies ranging from 20mHz to 10KHz on the PSoC6 Evaluation Board. 
+                Enabled ADC on GPIO pins for continuous digital conversion of two external analog input signals with reference to Vref signal.
+                 Achieved Real-Time data plotting on Serial Plotter and Multitasking using DMA and Interrupt. 
+                 Used Modus Tool Box (Eclipse IDE) and coded in C, HAL(Hardware Abstraction Layer) APIs, 
+                 and platform-specific PSoC6 PDL(Peripheral Driver Library) libraries.</p>
         </div>
         <div class="project">
+            <h3>Home Applications Control using Gesture Recognition</h3>
+            <p>Designed and Implemented a home automation system to control external household lights using various hand gestures. 
+                Hardware design included light interfacing with Arduino UNO R3 and relay circuitry. 
+                Software design included implementation using OpenCV, Google's MediaPipe library,
+                 and Arduino Pyfirmata library to use Python for the Arduino board. 
+                 A webcam is used as an input device for the detection and recognition of hand gestures using MediaPipe ML Model framework and OpenCV.</p>
+                 </div>
+        <div class="project">
             <h3>Voice-Activated Smart Home System</h3>
-            <p>Created a voice-activated smart home system with PSoC 62S2 Kit, featuring motion detection and light control using Embedded C and MQTT protocol.</p>
+            <p>Created a voice-activated smart home system with PSoC 62S2 Kit, 
+                featuring motion detection and light control using Embedded C and MQTT protocol.</p>
         </div>
     </section>
 
