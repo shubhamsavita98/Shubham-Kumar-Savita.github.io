@@ -1,0 +1,17 @@
+/* style.css */
+
+.skill-badge {
+  font-size: 1.1rem;
+  padding: 10px 15px;
+  margin: 5px;
+}
+
+/* Optional: Smooth scroll for navbar links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Optional: Section spacing */
+section {
+  scroll-margin-top: 70px;
+}
