@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shubham Kumar Savita - Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  </style>
 </head>
 
 <body>
@@ -29,126 +30,176 @@
     </div>
   </nav>
 
-  <header class="bg-light py-5 text-center">
+  <header class="hero text-center">
     <div class="container">
-      <h1 class="display-4">Shubham Kumar Savita</h1>
-      <p class="lead">Embedded Systems | Firmware | Real-Time Systems | Validation(Post-Silicon)</p>
+      <h1 class="hero-title">Shubham Kumar Savita</h1>
+      <p class="hero-subtitle">Embedded Systems &middot; Firmware &middot; Real-Time Systems &middot; Post-Silicon Validation</p>
+      <div class="hero-socials">
+        <a href="mailto:shubhamsavita89@gmail.com" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+        <a href="https://linkedin.com/in/shubhamks" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/shubhamsavita98" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+      </div>
     </div>
   </header>
 
-  <section id="about" class="container py-4">
-    <h2>About Me</h2>
-    <p>Passionate Embedded Systems Engineer with experience in firmware development, system software validation, real-time systems, power and performance post-silicon validation and hardware interfaces. Adept at using C/C++, Python, and various development tools to create efficient and reliable embedded solutions.</p>
+  <section id="about" class="container py-5">
+    <h2 class="section-title">About Me</h2>
+    <p class="lead-text">Passionate Embedded Systems Engineer with experience in firmware development, system software validation, real-time systems, power and performance post-silicon validation and hardware interfaces. Adept at using C/C++, Python, and various development tools to create efficient and reliable embedded solutions.</p>
   </section>
 
-  <section id="skills" class="bg-light py-4">
+  <section id="skills" class="bg-soft py-5">
     <div class="container">
-      <h2>Skills</h2>
-      <h5>Languages</h5>
-      <span class="badge bg-primary skill-badge">Embedded C</span>
-      <span class="badge bg-primary skill-badge">Python</span>
-      <span class="badge bg-primary skill-badge">C++</span>
-      <span class="badge bg-primary skill-badge">Verilog</span>
+      <h2 class="section-title">Skills</h2>
+      <div class="skill-group">
+        <h6 class="skill-label"><i class="bi bi-code-slash"></i> Languages</h6>
+        <span class="skill-badge variant-primary">Embedded C</span>
+        <span class="skill-badge variant-primary">Python</span>
+        <span class="skill-badge variant-primary">C++</span>
+        <span class="skill-badge variant-primary">Verilog</span>
+      </div>
 
-      <h5 class="mt-3">Tools & Platforms</h5>
-      <span class="badge bg-secondary skill-badge">FreeRTOS</span>
-      <span class="badge bg-secondary skill-badge">STM32</span>
-      <span class="badge bg-secondary skill-badge">NXP LPC4078</span>
-      <span class="badge bg-secondary skill-badge">PSoC6</span>
-      <span class="badge bg-secondary skill-badge">Keil</span>
-      <span class="badge bg-secondary skill-badge">ModusToolbox</span>
+      <div class="skill-group">
+        <h6 class="skill-label"><i class="bi bi-cpu"></i> Tools &amp; Platforms</h6>
+        <span class="skill-badge variant-secondary">FreeRTOS</span>
+        <span class="skill-badge variant-secondary">STM32</span>
+        <span class="skill-badge variant-secondary">NXP LPC4078</span>
+        <span class="skill-badge variant-secondary">PSoC6</span>
+        <span class="skill-badge variant-secondary">Keil</span>
+        <span class="skill-badge variant-secondary">ModusToolbox</span>
+      </div>
 
-      <h5 class="mt-3">Debug & Protocols</h5>
-      <span class="badge bg-success skill-badge">UART</span>
-      <span class="badge bg-success skill-badge">SPI</span>
-      <span class="badge bg-success skill-badge">I2C</span>
-      <span class="badge bg-success skill-badge">CAN</span>
+      <div class="skill-group">
+        <h6 class="skill-label"><i class="bi bi-diagram-3"></i> Debug &amp; Protocols</h6>
+        <span class="skill-badge variant-success">UART</span>
+        <span class="skill-badge variant-success">SPI</span>
+        <span class="skill-badge variant-success">I2C</span>
+        <span class="skill-badge variant-success">CAN</span>
+      </div>
     </div>
   </section>
 
-  <section id="projects" class="container py-4">
-    <h2>Projects</h2>
-    <h5>
-        Self-Driving RC Car | CAN Bus
-        <a href="https://gitlab.com/jincyjose491/sjtwo-c/-/tree/feature/project_v1/projects/motor?ref_type=heads" target="_blank" style="text-decoration: none; margin-left: 8px;"> 🔗 </a>
-    </h5>
-    <p> Designed a self-driving RC car utilizing CAN Bus, GPS, Compass, and an Android application to navigate from source to destination. 
-        The car successfully implements the obstacle avoidance algorithm in addition to self-navigation. 
-        All the nodes (sensor, motor, bridge controller, GPS, compass, driver) communicated on CAN Bus. 
-        Worked on Motor and Sensor nodes for effective navigation on up and down-hill terrain. Simulated and 
-        analyzed CAN data over CAN bus using BUS MASTER tool. This project incorporated SJTwo LPC4078(NXP) board, HRLV-MaxSonar-EZ1 sensor, Servo, and DC motor. 
-        Implemented FreeRTOS-based periodic callbacks to efficiently handle tasks in real-time.</p>
-    <h5>
-        Two-Channel Oscilloscope
-        <a href="https://github.com/shubhamsavita98/embedded/tree/main/PSoC6/Oscilloscope_PSoC6" target="_blank" style="text-decoration: none; margin-left: 8px;"> 🔗 </a>
-    </h5>
-    <p> 
-        Designed and Implemented a Two-channel Oscilloscope supporting frequencies ranging from 20mHz to 10KHz on the PSoC6 Evaluation Board. 
-    Enabled ADC on GPIO pins for continuous digital conversion of two external analog input signals with reference to Vref signal.
-    Achieved Real-Time data plotting on Serial Plotter and Multitasking using DMA and Interrupt. 
-    Used Modus Tool Box (Eclipse IDE) and coded in C, HAL(Hardware Abstraction Layer) APIs, 
-    and platform-specific PSoC6 PDL(Peripheral Driver Library) libraries.</p>
+  <section id="projects" class="container py-5">
+    <h2 class="section-title">Projects</h2>
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <article class="project-card h-100">
+          <h5 class="project-title">
+            Self-Driving RC Car | CAN Bus
+            <a href="https://gitlab.com/jincyjose491/sjtwo-c/-/tree/feature/project_v1/projects/motor?ref_type=heads" target="_blank" class="project-link" aria-label="View project"><i class="bi bi-box-arrow-up-right"></i></a>
+          </h5>
+          <p>Designed a self-driving RC car utilizing CAN Bus, GPS, Compass, and an Android application to navigate from source to destination.
+            The car successfully implements the obstacle avoidance algorithm in addition to self-navigation.
+            All the nodes (sensor, motor, bridge controller, GPS, compass, driver) communicated on CAN Bus.
+            Worked on Motor and Sensor nodes for effective navigation on up and down-hill terrain. Simulated and
+            analyzed CAN data over CAN bus using BUS MASTER tool. This project incorporated SJTwo LPC4078(NXP) board, HRLV-MaxSonar-EZ1 sensor, Servo, and DC motor.
+            Implemented FreeRTOS-based periodic callbacks to efficiently handle tasks in real-time.</p>
+        </article>
+      </div>
 
-    <h5>
-         Real-Time Sensor Data Acquisition System - FreeRTOS
-        <a href="https://github.com/shubhamsavita98/real-time-ms-projects" target="_blank" style="text-decoration: none; margin-left: 8px;"> 🔗 </a>
-    </h5>
-        <p> Developed a real-time data acquisition system leveraging FreeRTOS to implement essential embedded functionalities, including task scheduling, 
-            inter-task communication(Queue, Semaphores and Mutexes), and synchronization. The system is designed to collect and log data efficiently from 
-            a temperature sensor, using dedicated FreeRTOS tasks for periodic data acquisition and UART-based data logging. Utilized Percepio Tracealyzer 
+      <div class="col-lg-6">
+        <article class="project-card h-100">
+          <h5 class="project-title">
+            Two-Channel Oscilloscope
+            <a href="https://github.com/shubhamsavita98/embedded/tree/main/PSoC6/Oscilloscope_PSoC6" target="_blank" class="project-link" aria-label="View project"><i class="bi bi-box-arrow-up-right"></i></a>
+          </h5>
+          <p>Designed and Implemented a Two-channel Oscilloscope supporting frequencies ranging from 20mHz to 10KHz on the PSoC6 Evaluation Board.
+            Enabled ADC on GPIO pins for continuous digital conversion of two external analog input signals with reference to Vref signal.
+            Achieved Real-Time data plotting on Serial Plotter and Multitasking using DMA and Interrupt.
+            Used Modus Tool Box (Eclipse IDE) and coded in C, HAL(Hardware Abstraction Layer) APIs,
+            and platform-specific PSoC6 PDL(Peripheral Driver Library) libraries.</p>
+        </article>
+      </div>
+
+      <div class="col-lg-6">
+        <article class="project-card h-100">
+          <h5 class="project-title">
+            Real-Time Sensor Data Acquisition System &mdash; FreeRTOS
+            <a href="https://github.com/shubhamsavita98/real-time-ms-projects" target="_blank" class="project-link" aria-label="View project"><i class="bi bi-box-arrow-up-right"></i></a>
+          </h5>
+          <p>Developed a real-time data acquisition system leveraging FreeRTOS to implement essential embedded functionalities, including task scheduling,
+            inter-task communication(Queue, Semaphores and Mutexes), and synchronization. The system is designed to collect and log data efficiently from
+            a temperature sensor, using dedicated FreeRTOS tasks for periodic data acquisition and UART-based data logging. Utilized Percepio Tracealyzer
             for system optimization by visualizing tasks execution timelines and improved performance by analyzing task execution and inter-task communication metrics.</p>
-    <h5>
-        Applications Control using Gesture Recognition
-        <a href="https://github.com/shubhamsavita98/Arduino_OpenCV_Gesture_Recognition" target="_blank" style="text-decoration: none; margin-left: 8px;"> 🔗 </a>
-    </h5>
-        <p> Designed and Implemented a home automation system to control external household lights using various hand gestures. 
-            Hardware design included light interfacing with Arduino UNO R3 and relay circuitry. Software design included implementation 
-            using OpenCV, Google's MediaPipe library, and Arduino Pyfirmata library to use Python for the Arduino board. A webcam is used 
+        </article>
+      </div>
+
+      <div class="col-lg-6">
+        <article class="project-card h-100">
+          <h5 class="project-title">
+            Applications Control using Gesture Recognition
+            <a href="https://github.com/shubhamsavita98/Arduino_OpenCV_Gesture_Recognition" target="_blank" class="project-link" aria-label="View project"><i class="bi bi-box-arrow-up-right"></i></a>
+          </h5>
+          <p>Designed and Implemented a home automation system to control external household lights using various hand gestures.
+            Hardware design included light interfacing with Arduino UNO R3 and relay circuitry. Software design included implementation
+            using OpenCV, Google's MediaPipe library, and Arduino Pyfirmata library to use Python for the Arduino board. A webcam is used
             as an input device for the detection and recognition of hand gestures using MediaPipe ML Model framework and OpenCV.</p>
-    <h5>
-        32bit 5-Stage Pipelined MIPS Processor
-        <a href="https://github.com/shubhamsavita98" target="_blank" style="text-decoration: none; margin-left: 8px;"> 🔗 </a>
-    </h5>
-        <p> Designed and implemented 32-bit pipelined MIPS processor with forwarding, and data and control hazard units in Verilog HDL and simulated in ModelSim simulator.</p>
+        </article>
+      </div>
 
-    <h5>
-        Verification of Serial Peripheral Interface (SPI) Protocol
-    </h5>
-        <p> Designed and implemented test plans and test cases for SPI. Developed layered test benches (direct and randomized) to validate the SPI protocol implementation using System Verilog HDL and achieved 98% functional coverage.</p>
+      <div class="col-lg-6">
+        <article class="project-card h-100">
+          <h5 class="project-title">
+            32-bit 5-Stage Pipelined MIPS Processor
+            <a href="https://github.com/shubhamsavita98" target="_blank" class="project-link" aria-label="View project"><i class="bi bi-box-arrow-up-right"></i></a>
+          </h5>
+          <p>Designed and implemented 32-bit pipelined MIPS processor with forwarding, and data and control hazard units in Verilog HDL and simulated in ModelSim simulator.</p>
+        </article>
+      </div>
 
-    <h5>
-        Voice-Activated Smart Home System   
-    </h5>
-        <p> Created a voice-activated smart home system with PSoC 62S2 Kit, featuring motion detection and light control using Embedded C and MQTT protocol.</p>
+      <div class="col-lg-6">
+        <article class="project-card h-100">
+          <h5 class="project-title">Verification of Serial Peripheral Interface (SPI) Protocol</h5>
+          <p>Designed and implemented test plans and test cases for SPI. Developed layered test benches (direct and randomized) to validate the SPI protocol implementation using System Verilog HDL and achieved 98% functional coverage.</p>
+        </article>
+      </div>
+
+      <div class="col-lg-6">
+        <article class="project-card h-100">
+          <h5 class="project-title">Voice-Activated Smart Home System</h5>
+          <p>Created a voice-activated smart home system with PSoC 62S2 Kit, featuring motion detection and light control using Embedded C and MQTT protocol.</p>
+        </article>
+      </div>
+    </div>
   </section>
 
-  <section id="experience" class="bg-light py-4">
+  <section id="experience" class="bg-soft py-5">
     <div class="container">
-      <h2>Experience</h2>
-      <div class="mb-3">
-        <h5>Graduate Teaching Assistant - San Francisco State University</h5>
+      <h2 class="section-title">Experience</h2>
+      <div class="experience-item">
+        <h5 class="experience-role">Graduate Teaching Assistant <span class="experience-company">&mdash; San Francisco State University</span></h5>
         <p>Instructed and guided students through Embedded Systems laboratory sessions. Assisted in debugging and troubleshooting Embedded C assignments based on STM32L476RG Development Board.</p>
       </div>
-      <div>
-        <h5>System Software Validation Engineer - NVIDIA, Pune (INDIA)</h5>
+      <div class="experience-item">
+        <h5 class="experience-role">System Software Validation Engineer <span class="experience-company">&mdash; NVIDIA, Pune (INDIA)</span></h5>
         <p>Designed, developed, and executed functional, power and performance (post-silicon) tests for Nintendo, Shield and Jetson devices. Automated test scripts using Python and JSON and optimized test plans to reduce manual effort.
-           SoC bring-up and cross-functional collaboration.
-        </p>
+           SoC bring-up and cross-functional collaboration.</p>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="container py-4">
-    <h2>Contact</h2>
-    <div class="row">
-      <div class="col-md-4 text-md-start text-center">
-        Email: <a href="mailto:shubhamsavita89@gmail.com">shubhamsavita89@gmail.com</a>
+  <section id="contact" class="container py-5">
+    <h2 class="section-title">Contact</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <a href="mailto:shubhamsavita89@gmail.com" class="contact-card">
+          <i class="bi bi-envelope-fill contact-icon"></i>
+          <span class="contact-label">Email</span>
+          <span class="contact-value">shubhamsavita89@gmail.com</span>
+        </a>
       </div>
-      <div class="col-md-4 text-center">
-        LinkedIn: <a href="https://linkedin.com/in/shubhamks" target="_blank">linkedin.com/in/shubhamks</a>
+      <div class="col-md-4">
+        <a href="https://linkedin.com/in/shubhamks" target="_blank" class="contact-card">
+          <i class="bi bi-linkedin contact-icon"></i>
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">linkedin.com/in/shubhamks</span>
+        </a>
       </div>
-      <div class="col-md-4 text-md-end text-center">
-        GitHub: <a href="https://github.com/shubhamsavita98" target="_blank">github.com/shubhamsavita98</a>
+      <div class="col-md-4">
+        <a href="https://github.com/shubhamsavita98" target="_blank" class="contact-card">
+          <i class="bi bi-github contact-icon"></i>
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">github.com/shubhamsavita98</span>
+        </a>
       </div>
     </div>
   </section>
